@@ -15,26 +15,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="projeto-card">
-        <span class="tipo tipo-disciplina">Projeto de Disciplina</span>
-        <h3>Sistema de Enquetes (Polls)</h3>
-        <p>
-            Sistema de enquetes desenvolvido na disciplina de Programação Web,
-            seguindo o tutorial oficial do Django. Permite criar perguntas
-            e registrar votos.
-        </p>
-        <a href="#">github.com/joaosilva/django-polls</a>
-    </div>
+    {% for projeto in projetos %}
+        <div class="projeto-card">
+            <span class="tipo {{ projeto.tipo }}">Projeto de Disciplina</span>
+            <h3> {{ projeto.nome }} </h3>
+            <p>
+                {{ projeto.descricao }}
+            </p>
+            <a href="{{ projeto.git }}" target="_blank">github.com/Dowglas-Hademar/Enquentes</a>
+        </div>
+    {% endfor %}
 
-    <div class="projeto-card">
-        <span class="tipo tipo-pessoal">Projeto Pessoal</span>
-        <h3>API de Clima</h3>
-        <p>
-            API REST desenvolvida com Django REST Framework que consulta
-            dados climáticos e retorna previsões para cidades brasileiras.
-        </p>
-        <a href="#">github.com/joaosilva/clima-api</a>
-    </div>
 
 {% endblock %}
     

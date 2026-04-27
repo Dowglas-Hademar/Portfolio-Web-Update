@@ -560,29 +560,30 @@ django_tutorial/
 
 Agora é com você! Personalize o portfólio com **seus dados reais**:
 
-1. Troque o nome, curso, período e contatos
-2. Adicione uma foto sua (pode usar um placeholder por enquanto)
-3. Liste seus cursos e certificados reais
-4. Adicione seus projetos pessoais e de disciplinas com os links do GitHub
-5. **Desafio:** Crie uma terceira página (ex: `contato.html`) que também herde do `base.html` e adicione o link na navegação
-6. No app core criar um banco Pessoal  
-   6.1 nome;  
-   6.2 descricao;  
-   6.3 curso;  
-   6.4 Periodo;  
-   6.5 email;  
-   6.6 git;  
-   6.7 linked;
-   6.8 url de uma imagem  
-7. No app portfolia criar dois modelos  
-  7.1 Certificado (Somente uma coluna com Descriacao)  
-  7.2 Projeto
-    - tipo (Pessoal ou Disciplia)
-    - Nome
-    - descricao
-    - link do git
 
-8. Substituir os templates para usar esses modelos. Registrar os modelos no django-admin para criar e editar registros.
+- ✅ 1. Troque o nome, curso, período e contatos
+- ✅ 2. Adicione uma foto sua (pode usar um placeholder por enquanto)
+- ✅ 3. Liste seus cursos e certificados reais
+- ✅ 4. Adicione seus projetos pessoais e de disciplinas com os links do GitHub
+- ✅ 5. **Desafio:** Crie uma terceira página (ex: `contato.html`) que também herde do `base.html` e adicione o link na navegação
+- ✅ 6. No app core criar um banco Pessoal  
+        6.1 nome;  
+        6.2 descricao;  
+        6.3 curso;  
+        6.4 Periodo;  
+        6.5 email;  
+        6.6 git;  
+        6.7 linked;
+        6.8 url de uma imagem  
+- ✅ 7. No app portfolia criar dois modelos  
+        7.1 Certificado (Somente uma coluna com Descriacao)  
+        7.2 Projeto
+            - tipo (Pessoal ou Disciplia)
+            - Nome
+            - descricao
+            - link do git
+
+- ✅ 8. Substituir os templates para usar esses modelos. Registrar os modelos no django-admin para criar e editar registros.
 
 
 
