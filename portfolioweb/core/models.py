@@ -23,7 +23,7 @@ class Perfil(models.Model):
     
     class Meta:
         verbose_name = 'Perfil Pessoal'
-        verbose_name_plural = 'Perfis Pessoais'
+        verbose_name_plural = 'Perfis Pessoais' 
     
     def __str__(self):
         return self.nome
