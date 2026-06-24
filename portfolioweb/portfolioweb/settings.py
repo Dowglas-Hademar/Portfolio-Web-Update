@@ -53,6 +53,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
+# ─── Microservico de Notificacao ───
+NOTIFICACAO_MS_URL = 'http://127.0.0.1:8001'
+NOTIFICACAO_MS_API_KEY = '7e21c1e3f40a407c'
+# Hash da empresa criada no microservico
+
 ROOT_URLCONF = 'portfolioweb.urls'
 
 TEMPLATES = [
@@ -65,6 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'core.context_processors.notificacao_ms',
             ],
         },
     },
@@ -132,3 +139,4 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
