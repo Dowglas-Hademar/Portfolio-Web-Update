@@ -31,6 +31,8 @@ git clone https://github.com/Dowglas-Hademar/Microservico-Notificacoes.git
 
 Criar venv:
 
+Para cada projeto deve-se criar uma venv separara
+
 ```bash
 python -m venv venv
 ```
@@ -54,12 +56,14 @@ source venv/bin/activate
 ## 3. Instalar dependências
 
 No Portfolio:
+- Instalar na venv do portfolio todas as bibliotecas necessárias para que funcione
 
 ```bash
 pip install -r requirements.txt
 ```
 
 No Microserviço:
+- Instalar na venv do microserviço todas as bibliotecas necessárias para que funcione
 
 ```bash
 pip install -r requirements.txt
