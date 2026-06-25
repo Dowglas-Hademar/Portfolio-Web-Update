@@ -13,13 +13,14 @@ Projeto desenvolvido utilizando Django e Django REST Framework.
 ## 1. Clonar os projetos
 
 ### Portfolio Web
+- Crie uma pasta e abra no ambiente, e execute o comando abaixo para clonar o sistema de portfolio:
 
-```bash
+``` bash
 git clone https://github.com/Dowglas-Hademar/Portfolio-Web-Update.git
 ```
 
 ### Microserviço de Notificações
-
+- Crie uma pasta e abra no ambiente, e execute o comando abaixo para clonar o sistema de microserviço:
 ```bash
 git clone https://github.com/Dowglas-Hademar/Microservico-Notificacoes.git
 ```
@@ -27,12 +28,6 @@ git clone https://github.com/Dowglas-Hademar/Microservico-Notificacoes.git
 ---
 
 ## 2. Criar ambiente virtual
-
-Entre na pasta do projeto:
-
-```bash
-cd Portfolio-Web-Update
-```
 
 Criar venv:
 
@@ -134,6 +129,7 @@ Abrir outro terminal:
 
 ```bash
 cd Portfolio-Web-Update
+cd portfolioweb
 python manage.py runserver
 ```
 
@@ -176,6 +172,10 @@ do arquivo `settings.py` do Portfolio.
 
 ### Criar Notificação
 
+- É possível criar tanto pela interface de API como pela interface de admininstrador.
+
+#### Inteface API:
+
 Endpoint:
 
 ```http
@@ -197,6 +197,15 @@ Header:
 ```http
 X-Api-Key: HASH_DA_EMPRESA
 ```
+#### Interface de Admininstrador:
+
+No admin do Microserviço:
+- Acesse Notificações
+- Clique em Adicionar Notificação
+- Informe a empresa (depois de ja tê-la cadastrado como um target)
+- Informe o título da mensagem
+- Informe o contéudo da mensagem
+- Salve
 
 ### Resultado esperado
 
